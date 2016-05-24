@@ -4,7 +4,7 @@ class Low_Inventory_Exception(Exception):
         print("The inventory is low!")
 
 def test():
-    inventory = 11
+    inventory = 1
     if inventory < 10:
         raise Low_Inventory_Exception
 
@@ -13,6 +13,6 @@ try:
 except(Low_Inventory_Exception):
     print("Something is not right.")
 else:
-    print("Everything is good.")
+    print("Inventory is full.")
 finally:
-    print("Everything is fixed.")
+    print("Inventory will soon be filled up")
